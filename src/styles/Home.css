@@ -409,3 +409,111 @@
   font-size: 14px;
   color: #64748b;
 }
+
+
+/* ======================================================
+   RESPONSIVE — 900px and below
+====================================================== */
+@media (max-width: 900px) {
+
+  /* ===== HOME ===== */
+  .home-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .home-image img {
+    width: 260px;
+    height: 260px;
+  }
+
+  .home-content {
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .home-content h1 {
+    font-size: 34px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .resume-button {
+    align-self: center;
+  }
+
+  /* ===== SKILLS ===== */
+  .skills-page {
+    padding: 64px 20px 96px;
+  }
+
+  .dropdown-header {
+    padding: 18px 22px;
+  }
+
+  .dropdown-title-text {
+    font-size: 18px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 14px;
+  }
+
+  .skill-card {
+    padding: 16px 14px;
+    font-size: 14px;
+  }
+
+  /* ===== EXPERIENCE ===== */
+  .experience-page {
+    padding: 80px 20px 120px;
+  }
+
+  .experience-title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .experience-card {
+    padding: 24px 24px;
+  }
+
+  .experience-header h3 {
+    font-size: 18px;
+  }
+
+  .experience-points li {
+    font-size: 14px;
+  }
+
+  /* ===== CONTACT ===== */
+  .contact-page {
+    padding: 56px 20px 100px;
+  }
+
+  .contact-card {
+    padding: 32px 24px;
+  }
+
+  .contact-subtitle {
+    font-size: 22px;
+    white-space: normal; /* allow wrap on small screens */
+  }
+
+  .contact-btn {
+    align-self: center;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    padding: 24px 16px;
+  }
+}
