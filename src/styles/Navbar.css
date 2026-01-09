@@ -1,0 +1,39 @@
+/* ===== NAVBAR CONTAINER ===== */
+.navbar {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+
+  height: 56px;                 /* 👈 explicit height */
+  min-width: 520px;
+  padding: 0 48px;
+
+  background: #ffffff;
+  border-radius: 999px;
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.08),
+    0 4px 10px rgba(0, 0, 0, 0.04);
+
+  z-index: 1000;
+}
+
+/* ===== LINKS ===== */
+.navbar a {
+  color: #1e3a8a;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  position: relative;
+}
+
+/* ===== ACTIVE STATE ===== */
+.navbar a.active {
+  font-weight: 700;
+}
