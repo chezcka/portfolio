@@ -1,4 +1,6 @@
-/* ===== NAVBAR CONTAINER (DESKTOP BASE) ===== */
+/* ======================================================
+   NAVBAR CONTAINER (DESKTOP BASE)
+====================================================== */
 .navbar {
   position: fixed;
   top: 24px;
@@ -14,35 +16,45 @@
   min-width: 520px; /* ✅ DESKTOP BASE — DO NOT CHANGE */
   padding: 0 48px;
 
-  background: #ffffff;
+  background: var(--bg-card);
   border-radius: 999px;
 
-  box-shadow:
-    0 10px 25px rgba(0, 0, 0, 0.08),
-    0 4px 10px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--shadow-soft);
 
   z-index: 1000;
 }
 
-/* ===== LINKS ===== */
+/* ======================================================
+   NAVBAR LINKS
+====================================================== */
 .navbar a {
-  color: #1e3a8a;
+  color: var(--text-primary);
   text-decoration: none;
+
   font-weight: 500;
   font-size: 15px;
   white-space: nowrap;
+
+  transition: color 0.2s ease;
 }
 
+/* Active link */
 .navbar a.active {
+  color: var(--accent-primary);
   font-weight: 700;
 }
 
-/* ============================
+/* Hover */
+.navbar a:hover {
+  color: var(--accent-primary);
+}
+
+/* ======================================================
    TABLET (≤ 900px)
-============================ */
+====================================================== */
 @media (max-width: 900px) {
   .navbar {
-    min-width: unset; /* 🔑 THIS IS THE FIX */
+    min-width: unset; /* 🔑 REQUIRED */
     width: auto;
 
     gap: 32px;
@@ -56,12 +68,12 @@
   }
 }
 
-/* ============================
+/* ======================================================
    MOBILE (≤ 600px)
-============================ */
+====================================================== */
 @media (max-width: 600px) {
   .navbar {
-    min-width: unset; /* 🔑 REQUIRED */
+    min-width: unset;
     width: calc(100% - 32px);
     max-width: 360px;
 
@@ -76,9 +88,9 @@
   }
 }
 
-/* ============================
+/* ======================================================
    VERY SMALL DEVICES (≤ 360px)
-============================ */
+====================================================== */
 @media (max-width: 360px) {
   .navbar {
     gap: 14px;
