@@ -2,6 +2,7 @@
    HOME PAGE (HERO)
 ====================================================== */
 .home-page {
+  color: var(--text-primary);
   min-height: calc(100vh - var(--navbar-offset));
   display: flex;
   align-items: center;
