@@ -175,7 +175,7 @@
 }
 
 /* ======================================================
-   SKILLS GRID & CARDS
+   SKILLS GRID
 ====================================================== */
 .skills-grid {
   margin-top: 20px;
@@ -184,29 +184,75 @@
   gap: 16px;
 }
 
+/* ======================================================
+   SKILL CARD
+====================================================== */
 .skill-card {
-  padding: 18px 16px;
-  border-radius: 14px;
+  padding: 22px 16px;
+  border-radius: 16px;
 
   background: var(--bg-card);
   color: var(--text-primary);
 
-  font-size: 15px;
-  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 14px;
+  font-weight: 600;
   text-align: center;
 
+  border: 1px solid var(--border-soft);
   box-shadow: var(--shadow-soft);
 
   transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease,
-    background 0.2s ease;
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
 }
 
 .skill-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-hover);
   background: var(--bg-muted);
+}
+
+/* ======================================================
+   WHITE LOGO CIRCLE
+====================================================== */
+.logo-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--surface-elevated);
+  backdrop-filter: blur(6px);
+
+  box-shadow:
+    0 8px 18px rgba(0, 0, 0, 0.12),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.logo-circle img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+/* ======================================================
+   SKILL NAME
+====================================================== */
+.skill-card span {
+  color: var(--text-primary);
 }
 
 /* ======================================================

@@ -41,6 +41,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+   --surface-elevated: rgba(255, 255, 255, 0.85);
 }
 
 /* ======================================================
@@ -65,6 +67,8 @@
 
     --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.45);
     --shadow-hover: 0 18px 45px rgba(0, 0, 0, 0.6);
+
+    --surface-elevated: rgba(255, 255, 255, 0.08);
   }
 }
 

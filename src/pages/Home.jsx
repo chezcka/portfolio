@@ -74,16 +74,75 @@ export default function Home() {
             {openTechnical && (
                 <div className="dropdown-content">
                 <div className="skills-grid">
-                    <div className="skill-card">HTML5</div>
-                    <div className="skill-card">CSS3</div>
-                    <div className="skill-card">JavaScript</div>
-                    <div className="skill-card">ReactJS</div>
-                    <div className="skill-card">Flutter</div>
-                    <div className="skill-card">Vue</div>
-                    <div className="skill-card">PHP</div>
-                    <div className="skill-card">SQL</div>
-                    <div className="skill-card">Java</div>
-                    <div className="skill-card">Figma</div>
+                    <div className="skill-card">
+                    <div className="logo-circle">
+                        <img src="/logos/html.png" alt="HTML5" />
+                    </div>
+                    <span>HTML5</span>
+                    </div>
+
+                    <div className="skill-card">
+                    <div className="logo-circle">
+                        <img src="/logos/css.png" alt="CSS3" />
+                    </div>
+                    <span>CSS3</span>
+                    </div>
+
+                    <div className="skill-card">
+                    <div className="logo-circle">
+                        <img src="/logos/javascript.png" alt="JavaScript" />
+                    </div>
+                    <span>JavaScript</span>
+                    </div>
+
+                    <div className="skill-card">
+                    <div className="logo-circle">
+                        <img src="/logos/reactjs.png" alt="ReactJS" />
+                    </div>
+                    <span>ReactJS</span>
+                    </div>
+
+                    <div className="skill-card">
+                    <div className="logo-circle">
+                        <img src="/logos/flutter.png" alt="Flutter" />
+                    </div>
+                    <span>Flutter</span>
+                    </div>
+
+                    <div className="skill-card">
+                    <div className="logo-circle">
+                        <img src="/logos/vuejs.png" alt="Vue" />
+                    </div>
+                    <span>Vue</span>
+                    </div>
+
+                    <div className="skill-card">
+                    <div className="logo-circle">
+                        <img src="/logos/php.png" alt="PHP" />
+                    </div>
+                    <span>PHP</span>
+                    </div>
+
+                    <div className="skill-card">
+                    <div className="logo-circle">
+                        <img src="/logos/sql.png" alt="SQL" />
+                    </div>
+                    <span>SQL</span>
+                    </div>
+
+                    <div className="skill-card">
+                    <div className="logo-circle">
+                        <img src="/logos/java.png" alt="Java" />
+                    </div>
+                    <span>Java</span>
+                    </div>
+
+                    <div className="skill-card">
+                    <div className="logo-circle">
+                        <img src="/logos/figma.png" alt="Figma" />
+                    </div>
+                    <span>Figma</span>
+                    </div>
                 </div>
                 </div>
             )}
