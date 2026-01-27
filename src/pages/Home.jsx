@@ -77,14 +77,13 @@ export default function Home() {
                     <div className="skill-card">HTML5</div>
                     <div className="skill-card">CSS3</div>
                     <div className="skill-card">JavaScript</div>
-                    <div className="skill-card">React</div>
-                    <div className="skill-card">Angular</div>
+                    <div className="skill-card">ReactJS</div>
+                    <div className="skill-card">Flutter</div>
                     <div className="skill-card">Vue</div>
                     <div className="skill-card">PHP</div>
                     <div className="skill-card">SQL</div>
                     <div className="skill-card">Java</div>
                     <div className="skill-card">Figma</div>
-                    <div className="skill-card">UX/UI Design</div>
                 </div>
                 </div>
             )}
