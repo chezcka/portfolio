@@ -1,9 +1,42 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../styles/Home.css";
 
 export default function Home() {
   const [openTechnical, setOpenTechnical] = useState(false);
   const [openSoft, setOpenSoft] = useState(false);
+
+  const words = ["Web", "App"];
+  const typingSpeed = 120;
+  const erasingSpeed = 80;
+  const delayBetween = 1200;
+
+  const [typedWord, setTypedWord] = useState("");
+  const [wordIndex, setWordIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+  const currentWord = words[wordIndex];
+  let timeout;
+
+  if (!isDeleting && typedWord.length < currentWord.length) {
+    timeout = setTimeout(() => {
+      setTypedWord(currentWord.slice(0, typedWord.length + 1));
+    }, typingSpeed);
+  } else if (isDeleting && typedWord.length > 0) {
+    timeout = setTimeout(() => {
+      setTypedWord(currentWord.slice(0, typedWord.length - 1));
+    }, erasingSpeed);
+  } else if (!isDeleting && typedWord.length === currentWord.length) {
+    timeout = setTimeout(() => {
+      setIsDeleting(true);
+    }, delayBetween);
+  } else if (isDeleting && typedWord.length === 0) {
+    setIsDeleting(false);
+    setWordIndex((prev) => (prev + 1) % words.length);
+  }
+
+  return () => clearTimeout(timeout);
+}, [typedWord, isDeleting, wordIndex]);
 
   return (
     <>
@@ -23,7 +56,13 @@ export default function Home() {
             <h1>
               Hi, I’m <span>Chez</span>
             </h1>
-            <p className="subtitle">Web and App Developer</p>
+            <p className="subtitle">
+            <span className="typing-wrapper">
+                <span className="typing-word">{typedWord}</span>
+                <span className="typing-cursor">|</span>
+            </span>
+            &nbsp;Developer
+            </p>
             <p className="description">
               I design and develop scalable, responsive web applications
               with a strong focus on performance, accessibility, and user experience.
@@ -183,7 +222,7 @@ export default function Home() {
                     <div className="skill-card">Collaboration</div>
                     <div className="skill-card">Creativity</div>
                     <div className="skill-card">Critical Thinking</div>
-                    <div className="skill-card">Leadership</div>
+                    <div className="skill-card">Attention to Detail</div>
                 </div>
                 </div>
             )}

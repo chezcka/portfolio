@@ -102,6 +102,7 @@
   background: var(--accent-hover);
   transform: translateY(-2px);
   box-shadow: var(--shadow-hover);
+  color: #ffffff;
 }
 
 /* ======================================================
@@ -453,6 +454,31 @@
 .footer p {
   font-size: 14px;
   color: var(--text-muted);
+}
+
+/* ======================================================
+   TYPING ANIMATION
+====================================================== */
+.typing-wrapper {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.typing-word {
+  color: var(--accent-primary);
+  font-weight: 600;
+}
+
+.typing-cursor {
+  margin-left: 2px;
+  color: var(--accent-primary);
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 /* ======================================================
