@@ -2,6 +2,13 @@ import "../styles/Projects.css";
 
 const websiteProjects = [
 {
+    title: "Bonchon Calorie Counter",
+    img: "/photos/bonchon-calorie-counter.jpg",
+    desc: "Bonchon Calorie Counter is a React + Vite web application that allows users to browse menu items, adjust quantities, and instantly compute total calorie intake. It focuses on fast UI interactions, clean state management, and a responsive ordering-style experience.",
+    link: "https://bonchon-calorie-counter.vercel.app/",
+    type: "website",
+  },
+  {
     title: "RC Digitized Research Catalog",
     img: "/photos/rc-digitized-search-enginge.jpg",
     desc: "A commissioned web-based research catalog and search engine designed to digitize and organize academic research records.",
