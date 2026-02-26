@@ -236,6 +236,61 @@ export default function Home() {
             <h2 className="experience-title">Work Experience</h2>
 
             <div className="experience-list">
+            {/* Experience Item 3 */}
+            <div className="experience-card">
+                <div className="experience-header">
+                <h3>Java Developer</h3>
+                <span className="company">
+                    Vertere Global Solutions
+                </span>
+                <span className="date">March 2026 – Present</span>
+                </div>
+
+                <ul className="experience-points">
+                <li>
+                    Assist in defining and reviewing the technical requirements for the applications, including security, integration, and quality requirements.
+                </li>
+                <li>
+                    Create or assist in creating micro designs.
+                </li>
+                <li>
+                    Configure, build, and test the application technical components.
+                </li>
+                <li>
+                    Work with other developers, functional teams, and the technical team to make sure that the configuration and custom components meet application requirements.
+                </li>
+                <li>
+                    Participate in code and quality reviews and testing.
+                </li>
+                </ul>
+            </div>
+
+            {/* Experience Item 2 */}
+            <div className="experience-card">
+                <div className="experience-header">
+                <h3>Junior Programmer</h3>
+                <span className="company">
+                    Scottland Food Group Corporation
+                </span>
+                <span className="date">November 2025 – March 2026</span>
+                </div>
+
+                <ul className="experience-points">
+                <li>
+                    Design, develop, and maintain scalable web and mobile applications with a focus on performance, stability, and user experience.
+                </li>
+                <li>
+                    Develop high-quality, component-based user interfaces using modern JavaScript frameworks, improving efficiency and UX consistency.
+                </li>
+                <li>
+                    Collaborate with designers, project managers, and other developers to align software solutions with business goals, occasionally providing technical recommendations and guidance.
+                </li>
+                <li>
+                    Maintain technical documentation for developed applications to ensure clarity for future development and maintenance.
+                </li>
+                </ul>
+            </div>
+            
             {/* Experience Item 1 */}
             <div className="experience-card">
                 <div className="experience-header">
@@ -266,61 +321,6 @@ export default function Home() {
                 <li>
                     Participated in code reviews and maintained clear communication to
                     resolve issues efficiently.
-                </li>
-                </ul>
-            </div>
-
-            {/* Experience Item 2 */}
-            <div className="experience-card">
-                <div className="experience-header">
-                <h3>Junior Programmer</h3>
-                <span className="company">
-                    Scottland Food Group Corporation
-                </span>
-                <span className="date">November 2025 – March 2026</span>
-                </div>
-
-                <ul className="experience-points">
-                <li>
-                    Design, develop, and maintain scalable web and mobile applications with a focus on performance, stability, and user experience.
-                </li>
-                <li>
-                    Develop high-quality, component-based user interfaces using modern JavaScript frameworks, improving efficiency and UX consistency.
-                </li>
-                <li>
-                    Collaborate with designers, project managers, and other developers to align software solutions with business goals, occasionally providing technical recommendations and guidance.
-                </li>
-                <li>
-                    Maintain technical documentation for developed applications to ensure clarity for future development and maintenance.
-                </li>
-                </ul>
-            </div>
-
-            {/* Experience Item 3 */}
-            <div className="experience-card">
-                <div className="experience-header">
-                <h3>Java Developer</h3>
-                <span className="company">
-                    Vertere Global Solutions
-                </span>
-                <span className="date">March 2026 – Present</span>
-                </div>
-
-                <ul className="experience-points">
-                <li>
-                    Assist in defining and reviewing the technical requirements for the applications, including security, integration, and quality requirements.
-                </li>
-                <li>
-                    Create or assist in creating micro designs.
-                </li>
-                <li>
-                    Configure, build, and test the application technical components.
-                </li>
-                <li>
-                    Work with other developers, functional teams, and the technical team to make sure that the configuration and custom components meet application requirements.
-                </li>
-                <li>
-                    Participate in code and quality reviews and testing.
                 </li>
                 </ul>
             </div>

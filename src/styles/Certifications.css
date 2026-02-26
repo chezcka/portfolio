@@ -77,6 +77,7 @@
   background: var(--accent-hover);
   transform: translateY(-2px);
   box-shadow: var(--shadow-hover);
+  color: #ffffff;
 }
 
 /* ======================================================
