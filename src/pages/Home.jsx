@@ -64,10 +64,9 @@ export default function Home() {
             &nbsp;Developer
             </p>
             <p className="description">
-              I design and develop scalable, responsive web applications
-              with a strong focus on performance, accessibility, and user experience.
-              I specialize in translating business requirements into reliable,
-              maintainable, and modern web solutions.
+            Delivering scalable and responsive web applications that prioritize performance, 
+            accessibility, and user experience. Turning business requirements into reliable, efficient, 
+            and maintainable solutions through collaborative development.
             </p>
             {/* Resume Button */}
             <a
@@ -290,7 +289,7 @@ export default function Home() {
                 </li>
                 </ul>
             </div>
-            
+
             {/* Experience Item 1 */}
             <div className="experience-card">
                 <div className="experience-header">
