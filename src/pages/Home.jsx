@@ -277,7 +277,7 @@ export default function Home() {
                 <span className="company">
                     Scottland Food Group Corporation
                 </span>
-                <span className="date">November 2025 – Present</span>
+                <span className="date">November 2025 – March 2026</span>
                 </div>
 
                 <ul className="experience-points">
@@ -292,6 +292,35 @@ export default function Home() {
                 </li>
                 <li>
                     Maintain technical documentation for developed applications to ensure clarity for future development and maintenance.
+                </li>
+                </ul>
+            </div>
+
+            {/* Experience Item 3 */}
+            <div className="experience-card">
+                <div className="experience-header">
+                <h3>Java Developer</h3>
+                <span className="company">
+                    Vertere Global Solutions
+                </span>
+                <span className="date">March 2026 – Present</span>
+                </div>
+
+                <ul className="experience-points">
+                <li>
+                    Assist in defining and reviewing the technical requirements for the applications, including security, integration, and quality requirements.
+                </li>
+                <li>
+                    Create or assist in creating micro designs.
+                </li>
+                <li>
+                    Configure, build, and test the application technical components.
+                </li>
+                <li>
+                    Work with other developers, functional teams, and the technical team to make sure that the configuration and custom components meet application requirements.
+                </li>
+                <li>
+                    Participate in code and quality reviews and testing.
                 </li>
                 </ul>
             </div>
